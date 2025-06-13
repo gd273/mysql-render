@@ -1,0 +1,11 @@
+services:
+  - type: private-service
+    name: mysql
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: MYSQL_ROOT_PASSWORD
+        value: G12345J
+      - key: MYSQL_DATABASE
+        value: rec_sys
