@@ -9,7 +9,5 @@ services:
         value: G12345J
       - key: MYSQL_DATABASE
         value: rec_sys
-    ports:
-      - port: 3306
-        protocol: tcp
-    healthCheckPath: ""  # Disable HTTP health check
+    autoDeploy: false
+    healthCheckPath: ""  # disables HTTP health check to prevent timeout    autoDeploy: false
