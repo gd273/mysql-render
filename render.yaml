@@ -9,3 +9,6 @@ services:
         value: G12345J
       - key: MYSQL_DATABASE
         value: rec_sys
+    ports:
+      - port: 3306
+        protocol: tcp
